@@ -18,6 +18,19 @@ arr: [Int] = [], arr: [Int] = [Int]() => 배열 선언방식 2가지
 
 옵셔널 변수를 guard 키워드를 사용해 유효성 검사 또는 nil을 벗길 수 있다.
 
+함수의 매개변수 사용법 : named parameter, parameter, ignore parameter
+
+struct 제네릭 : 제네릭 타입을 정하지 않으면 자동으로 정한다.
+
+closure 사용법 3가지 
+
+1. var variable : T = {return T}()
+
+2. var variable : T {return T}
+
+3. 추상 : 매개변수 타입 -> 리턴 타입, 구현 : 매개변수 타입 -> 리턴 타입 
+    let variable : (T) -> T = { (param : T) -> T in return T }
+    let variable : (T) -> Void = { (param : T) in  }
 
 ```
 
