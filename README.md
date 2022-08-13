@@ -31,6 +31,17 @@ closure 사용법 3가지
 3. 추상 : 매개변수 타입 -> 리턴 타입, 구현 : 매개변수 타입 -> 리턴 타입 
     let variable : (T) -> T = { (param : T) -> T in return T }
     let variable : (T) -> Void = { (param : T) in  }
+    
+매개변수로 클로저를 갖는 함수
+func funName( closureName : (T) -> T){
+    closure()
+}
+
+optional closure parameter
+func funName( closureName : ((T)->T)? = nil){
+    closure()
+}
+
 
 ```
 
