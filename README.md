@@ -19,7 +19,7 @@ Based on swift5
 
 6. 함수의 매개변수 사용법 : named parameter, parameter, ignore parameter
 
-7. struct 제네릭 : 제네릭 타입을 정하지 않으면 자동으로 정한다.
+7. struct 제네릭 : 제네릭 타입을 정하지 않으면 자동으로 정한다.?
 
 8. closure 사용법 3가지 
     1. var variable : T = {return T}()
@@ -30,7 +30,7 @@ Based on swift5
         let variable : (T) -> T = { (param : T) -> T in return T }
         let variable : (T) -> Void = { (param : T) in  }
     
-8. 매개변수로 클로저를 갖는 함수
+9. 매개변수로 클로저를 갖는 함수
     1. closure parameter
     func funName( closureName : (T) -> T){
         closureName()
@@ -41,11 +41,10 @@ Based on swift5
         closureName()
     }
 
-9. 생성자와 해체자
+10. 생성자와 해체자
     init 메소드로 생성자를 만들 수 있다.
     deinit 메소드로 해체자를 만들 수 있다.
     두 메소드에서 메모리에 적재되는 것과 사라지는 것을 알 수 있다.
-
 
 ```
 
