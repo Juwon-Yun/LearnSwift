@@ -20,7 +20,7 @@ struct NavView: View {
            Spacer()
            
            Text("Instagram")
-               .font(.custom("OleoScript-Regular", size: 30))
+               .font(Font.custom("NotoSansCJKkr-Bold", size: 30))
            
            Image(systemName: "plane-arrow")
                .resizable()
@@ -29,6 +29,20 @@ struct NavView: View {
                .rotationEffect(.degrees(-28))
         
        }
+        
+        
+//        ZStack{
+//            Text("폰트 설치된 목록").font(.custom("NotoSansCJKkr-Bold", size: 40))
+//        }.onAppear{
+//            for family: String in UIFont.familyNames {
+//                            print(family)
+//                            for names : String in UIFont.fontNames(forFamilyName: family){
+//                                print("=== \(names)")
+//                            }
+//                        }
+//
+//        }
+        
     }
 }
 
