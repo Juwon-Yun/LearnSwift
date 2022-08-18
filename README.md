@@ -22,6 +22,7 @@ Based on swift5
 7. struct 제네릭 : 제네릭 타입을 정하지 않으면 자동으로 정한다.?
 
 8. closure 사용법 3가지 
+
     1. var variable : T = {return T}()
 
     2. var variable : T {return T}
