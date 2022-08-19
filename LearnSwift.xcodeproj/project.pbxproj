@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC07D78128AFC4D300E3F17E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78028AFC4D300E3F17E /* NewsView.swift */; };
+		AC07D78428AFC6CC00E3F17E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78328AFC6CC00E3F17E /* Person.swift */; };
 		ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */; };
 		ACBF5FD1289977AE00D5858A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FD0289977AE00D5858A /* ContentView.swift */; };
 		ACBF5FD3289977AF00D5858A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF5FD2289977AF00D5858A /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		AC07D78028AFC4D300E3F17E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		AC07D78328AFC6CC00E3F17E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ACBF5FCB289977AE00D5858A /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftApp.swift; sourceTree = "<group>"; };
 		ACBF5FD0289977AE00D5858A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		AC07D78228AFC6B800E3F17E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC07D78328AFC6CC00E3F17E /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACBF5FC2289977AE00D5858A = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		ACBF5FCD289977AE00D5858A /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC07D78228AFC6B800E3F17E /* Models */,
 				AC07D77F28AFC4C100E3F17E /* News */,
 				ACE1356128AE820C00D7F2D5 /* Nav */,
 				ACE1355F28AE7FE100D7F2D5 /* InstagramView.swift */,
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE1356528AE823600D7F2D5 /* NavView.swift in Sources */,
+				AC07D78428AFC6CC00E3F17E /* Person.swift in Sources */,
 				ACBF5FD1289977AE00D5858A /* ContentView.swift in Sources */,
 				ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */,
 				AC07D78128AFC4D300E3F17E /* NewsView.swift in Sources */,
