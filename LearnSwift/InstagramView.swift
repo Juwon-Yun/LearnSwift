@@ -14,22 +14,12 @@ struct InstagramView: View {
                     NavView(colWidth: colWidth)
                     
                     ScrollView{
-                        HStack{
-                            Image(systemName: "paperplane")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 20)
-                                .rotationEffect(.degrees(-28))
+                        VStack{
+                            NewsView()
+                            
+                            HStack{
                                 
-                            
-                            Text("Lorem ipsum dolor sit amet, conectetur adipiscing elt, sed do eiusmod tempor incididuntut labore et dolore magna aliqua.")
-                                .font(.system(size: 12))
-                            
-                            Image(systemName: "xmark")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 20)
-                                .foregroundColor(.gray)
+                            }
                         }
                     }
                     

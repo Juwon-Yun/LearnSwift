@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC07D78128AFC4D300E3F17E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78028AFC4D300E3F17E /* NewsView.swift */; };
 		ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */; };
 		ACBF5FD1289977AE00D5858A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FD0289977AE00D5858A /* ContentView.swift */; };
 		ACBF5FD3289977AF00D5858A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF5FD2289977AF00D5858A /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC07D78028AFC4D300E3F17E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		ACBF5FCB289977AE00D5858A /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftApp.swift; sourceTree = "<group>"; };
 		ACBF5FD0289977AE00D5858A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC07D77F28AFC4C100E3F17E /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AC07D78028AFC4D300E3F17E /* NewsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		ACBF5FC2289977AE00D5858A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		ACBF5FCD289977AE00D5858A /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC07D77F28AFC4C100E3F17E /* News */,
 				ACE1356128AE820C00D7F2D5 /* Nav */,
 				ACE1355F28AE7FE100D7F2D5 /* InstagramView.swift */,
 				ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */,
@@ -274,6 +285,7 @@
 				ACE1356528AE823600D7F2D5 /* NavView.swift in Sources */,
 				ACBF5FD1289977AE00D5858A /* ContentView.swift in Sources */,
 				ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */,
+				AC07D78128AFC4D300E3F17E /* NewsView.swift in Sources */,
 				ACE1356028AE7FE100D7F2D5 /* InstagramView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
