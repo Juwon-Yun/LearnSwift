@@ -61,6 +61,7 @@ dictionaly01.updateValue("updated value 02", forKey: "best02")
 print(dictionaly01["best02"])
 
 // 선언 방식
+// dictionarly는 map과 거의 똑같다.
 let emptyDictionary01: [String : Int] = [:]
 let emptyDictionary02 : [String : Int] = [String : Int]()
 let emptyDictionary03 : [String : Int] = Dictionary<String, Int>()
@@ -69,4 +70,4 @@ for item in dictionaly01 {
     print( "item :::"  , item.value)
 }
 
-// dictionarly는 map과 거의 똑같다.
+

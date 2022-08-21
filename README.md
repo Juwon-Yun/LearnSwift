@@ -46,7 +46,22 @@ Based on swift5
     init 메소드로 생성자를 만들 수 있다.
     deinit 메소드로 해체자를 만들 수 있다.
     두 메소드에서 메모리에 적재되는 것과 사라지는 것을 알 수 있다.
-
+    
+11. 상속
+    class 키워드를 사용해 상속을 구현한다.
+    
+    class Animal {}
+    class dog : Animal {}
+    
+12. Dictionary
+    Collection 타입이다. Map과 유사함 인덱스가 없다. key, value만 있음.
+    let dictionarly : [Key<T> : Value<T>] = [:]
+    let dictionarly : [Key<T> : Value<T>] = [Key<T> : Value<T>]()
+    let dictionarly : [Key<T> : Value<T>] = Dictionary<key<T>, Value<T>>()
+    
+    요소의 .key, .value로 값에 접근할 수 있다.
+    .updateValue(updateValue, forKey: key)로 지정한 키값의 값을 변경할 수 있다. 
+    
 ```
 
 </details>
