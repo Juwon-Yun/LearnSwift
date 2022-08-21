@@ -19,7 +19,7 @@ Based on swift5
 
 6. 함수의 매개변수 사용법 : named parameter, parameter, ignore parameter
 
-7. struct 제네릭 : 제네릭 타입을 정하지 않으면 자동으로 정한다.?
+7. struct 제네릭 : 제네릭 타입을 정하지 않으면 자동으로 정한다?.
 
 8. closure 사용법 3가지 
 
@@ -62,9 +62,23 @@ Based on swift5
     요소의 .key, .value로 값에 접근할 수 있다.
     .updateValue(updateValue, forKey: key)로 지정한 키값의 값을 변경할 수 있다. 
     
+13. Final Class 키워드
+    Final 키워드를 사용해 클래스를 선언하면 다른 클래스에서 상속받지 못한다.
+    final class Animal {} 
+    
+14. method parameter inout 키워드
+    Swift의 메소드 매개변수는 기본이 let으로 설정되어 있어, 타입 앞에 inout 키워드를 추가하면 값을 변경할 수 있다.
+    
+    func some(_ name : String) {} 
+    func some(_ name : inout String) {
+        name = "변경함" + name
+    }
+    
+    
+    
 ```
 
 </details>
 
 
-(Swift Doc)[https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html]
+[Swift Doc](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
