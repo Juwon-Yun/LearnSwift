@@ -73,7 +73,31 @@ Based on swift5
     func some(_ name : inout String) {
         name = "변경함" + name
     }
+   
+15. Error, enum Error
+    enum으로 Error 종류를 선언해 꺼내다 사용할 수 있다.
     
+    에러가 발생할 인스턴스 앞에 try 키워드를 붙여 에러 처리를 할 수 있다.
+    try occurError()
+    
+    try! -> 에러가 무조건 없을 거라고 컴파일러한테 말함.
+    try! occurError()
+    
+    try? -> 에러가 던져져도 에러 처리를 하지 않겠다.
+    try? occurError()
+    
+    try 키워드를 사용하는 인스턴스틑 do catch 문법으로 감쌀 수 있다.
+    do{
+        try occurError()
+    } catch {
+        print(error) // -> 이때 error 변수는 선언안해도 쓸 수 있음. 기본임
+    }
+    
+16. Struct Mutating
+    Class 키워드가 아닌 Struct 내부에서 멤버 변수 값에 변경이 필요할 때
+    func some(){}
+    mutating func some(){}
+    문법으로 멤버 변수 값을 변경 할 수 있다.
     
     
 ```
