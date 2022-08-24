@@ -6,6 +6,8 @@ struct InstagramView: View {
     let people : [Person] = [
         Person(name : "mrglasses", image : "sm-laptop"),
         Person(name : "longhair", image : "sm-laptop-drawing"),
+        Person(name : "longhair", image : "sm-laptop-drawing"),
+        Person(name : "longhair", image : "sm-laptop-drawing"),
         Person(name : "ladygaga", image : "sm-puzzle")
     ]
     
