@@ -103,7 +103,52 @@ Based on swift5
     
     mutating 키워드로 멤버변수 값을 변경할 수 있다.
     
+17. Extends Protocol
+    선언된 protocol을 확장한다.
+    Dart의 Extension on 키워드와 동일하다.
     
+    protocol some{}
+    extension some{
+        func extendFunc() -> Void{}
+    }
+    
+18. associatedtype Protocol
+    프로토콜의 타일을 추상화 할 수 있다.
+    
+    protocol some{
+        associatedtype T
+        var something : [T] {get set}
+        mutating func handleSomething(_ param : T)
+    }
+    
+    extension some {
+        mutating func handleSomething(_ param : T){
+            self.something.append(param)
+        }
+    }
+    
+    enum associatedtypeEnum {
+        case enum1, enum2
+    }
+    
+    struct someInstance : some {
+        var list : [associatedtypeEnum] = []
+    
+        mutating func handleSomething(_ param : associatedtypeEnum){
+            self.something.append(param)
+        }
+    }
+    
+19. typeAlias
+    미리 선언한 클로저나 프로토콜에 대해 약어를 정의한다.
+    클로저와 프로토콜을 사용하면 코드가 길어지거나 가독성이 떨어지는데 
+    약어를 설정해 가독성을 증가시켜줄 수 있다.
+    
+    typealias someAlias = protocol01 & protocol02
+    
+    struct someStruct : protocol01 & protocol02 {} 또는 
+    struct someStruct : someAlias {}
+
 ```
 
 </details>
