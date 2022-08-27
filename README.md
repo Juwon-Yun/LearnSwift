@@ -113,7 +113,7 @@ Based on swift5
     }
     
 18. associatedtype Protocol
-    프로토콜의 타일을 추상화 할 수 있다.
+    프로토콜의 타입을 추상화 할 수 있다.
     
     protocol some{
         associatedtype T
@@ -142,7 +142,7 @@ Based on swift5
 19. typeAlias
     미리 선언한 클로저나 프로토콜에 대해 약어를 정의한다.
     클로저와 프로토콜을 사용하면 코드가 길어지거나 가독성이 떨어지는데 
-    약어를 설정해 가독성을 증가시켜줄 수 있다.
+    약어를 설정해 가독성을 향상 시켜줄 수 있다.
     
     typealias someAlias = protocol01 & protocol02
     
