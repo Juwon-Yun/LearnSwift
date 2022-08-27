@@ -45,5 +45,12 @@ let resultHello = sayHello(getName: getName(_:), name : "yjw")
 // 이런걸 고차함수라고 한다.
 //@inlinable public func map<T>(_ transform: (Element) throws -> T) rethrows -> [T]
 
+let numbers = [3, 7, 4, -2, 9, -6, 10, 1]
 
+let numberToString : [String] = numbers.map{ (aNumber : Int) -> String in
+    return "숫자 \(aNumber) 입니다."
+}
 
+let numberOnlyEven : [Int] = numbers.filter{aNumber in return aNumber % 2 == 0}
+
+print(numberOnlyEven)
