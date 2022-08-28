@@ -35,11 +35,11 @@ func getName(_ name : String) -> String{
 var getNameClosure : (String) -> String
 
 // 메소드인데 매개변수를 클로저로 받고 클로저에서 매개변수 값을 변경한다.
-func sayHello(getName : (String) -> String, name : String ) -> String{
-    return getName(name)
+func sayHello(closureParameter : (String) -> String, name : String ) -> String{
+    return closureParameter(name)
 }
 
-let resultHello = sayHello(getName: getName(_:), name : "yjw")
+let resultHello = sayHello(closureParameter: getName(_:), name : "yjw")
 
 // Swift에서의 map의 정의
 // 이런걸 고차함수라고 한다.

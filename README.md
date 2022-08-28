@@ -157,9 +157,30 @@ Based on swift5
     
     lazy var some : Some = Some()
     
-21. higher order function
-    고차함수
+21. higher order function (: 고차함수)
+    매개변수로 함수 혹은 클로저를 받고 매개변수를 변환하고 반환하는 함수를 말한다.
+    
+    주로 사용하는 고차함수로는 Sorted, Map, Filter, Reduce등이 고차함수이다.
+    
+    빌트인되어 있는 Swift의 고차함수 Map
+    @inlinable public func map<T>(_ transform: (Element) throws -> T) rethrows -> [T]
+    
+    // 추상화
+    func sayHi(closureParameter : (String) -> String, name : String ) -> String{
+        return closureParameter(name)
+    }
+    
+    // 구현체
+    func appendText(_ name : Strin) -> String{
+        return "my name is \(name)" 
+    }
+    
+    // 사용법
+    let resultHello = sayHello(closureParameter: getName(_:), name : "yjw")
 
+    // 고차함수 Filter
+    let numberOnlyEven : [Int] = numbers.filter{aNumber in return aNumber % 2 == 0}
+    
 ```
 
 </details>
