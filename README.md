@@ -149,6 +149,17 @@ Based on swift5
     struct someStruct : protocol01 & protocol02 {} 또는 
     struct someStruct : someAlias {}
 
+20. lazy
+    dart의 late키워드와 비슷하다.
+    
+    lazy 키워드가 붙은 인스턴스는 선언과 동시에 메모리에 올라가지 않고
+    사용할 때 메모리에 올라간다.
+    
+    lazy var some : Some = Some()
+    
+21. higher order function
+    고차함수
+
 ```
 
 </details>
