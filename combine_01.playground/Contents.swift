@@ -35,4 +35,50 @@ pubIntArray.sink(receiveCompletion: { completion in
     print("값을 받았어요 \(receivedValue)")
 })
 
+var notification = Notification.Name("com.dev.customNoti")
 
+var defaultPublisher = NotificationCenter.default.publisher(for: notification)
+
+// Rx의 disposable과 같다. 구독 행위를 하는 행위자
+var subscription : AnyCancellable?
+
+var subscriptionSet = Set<AnyCancellable>()
+
+subscription = defaultPublisher.sink(receiveCompletion: { completion in
+    switch completion {
+    case .finished:
+        print("완료")
+    case .failure(let error):
+        print("에러 ::: \(error)")
+    }
+}, receiveValue: { receive in
+    print("받은 값 : \(receive)")
+})
+
+// 끝난 다음에 set에 store해도 cancel 한것과 같다.
+subscription?.store(in: &subscriptionSet)
+
+NotificationCenter.default.post(Notification(name: notification))
+
+NotificationCenter.default.post(Notification(name: notification))
+
+NotificationCenter.default.post(Notification(name: notification))
+
+// 다 쓰고 난뒤에 메모리에서 지워준다.
+//subscription?.cancel()
+
+
+// KVO - key value observing
+class Friend {
+    var name = "철수"{
+        didSet{
+            print("name - didSet() : ", name)
+        }
+    }
+}
+
+var friend = Friend()
+
+// \.name => 어떠한(\).name 이다.
+// 영수로 value assign이 가능하다.
+var anyCancelable : AnyCancellable = ["영수"].publisher.assign(to: \.name, on: friend)
