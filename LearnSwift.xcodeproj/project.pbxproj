@@ -10,6 +10,7 @@
 		AC07D78128AFC4D300E3F17E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78028AFC4D300E3F17E /* NewsView.swift */; };
 		AC07D78428AFC6CC00E3F17E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78328AFC6CC00E3F17E /* Person.swift */; };
 		AC07D78728AFC9FC00E3F17E /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78628AFC9FC00E3F17E /* ThumbView.swift */; };
+		AC43E74C28C75FBD00FE1C0B /* combine_02.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC43E74B28C75FBD00FE1C0B /* combine_02.storyboard */; };
 		ACA27BE228BA5F4700A6EA97 /* SortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA27BE128BA5F4700A6EA97 /* SortView.swift */; };
 		ACA27BE428BA641C00A6EA97 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACA27BE328BA641C00A6EA97 /* README.md */; };
 		ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */; };
@@ -44,6 +45,7 @@
 		AC07D78028AFC4D300E3F17E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		AC07D78328AFC6CC00E3F17E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		AC07D78628AFC9FC00E3F17E /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
+		AC43E74B28C75FBD00FE1C0B /* combine_02.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = combine_02.storyboard; sourceTree = "<group>"; };
 		ACA27BE128BA5F4700A6EA97 /* SortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortView.swift; sourceTree = "<group>"; };
 		ACA27BE328BA641C00A6EA97 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ACBF5FCB289977AE00D5858A /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 		ACBF5FCD289977AE00D5858A /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC43E74B28C75FBD00FE1C0B /* combine_02.storyboard */,
 				ACA27BE328BA641C00A6EA97 /* README.md */,
 				ACA27BE028BA5F2100A6EA97 /* SortView */,
 				AC07D78528AFC9E600E3F17E /* Thumbs */,
@@ -294,6 +297,7 @@
 			files = (
 				ACA27BE428BA641C00A6EA97 /* README.md in Resources */,
 				ACBF5FD6289977AF00D5858A /* Preview Assets.xcassets in Resources */,
+				AC43E74C28C75FBD00FE1C0B /* combine_02.storyboard in Resources */,
 				ACBF5FD3289977AF00D5858A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
