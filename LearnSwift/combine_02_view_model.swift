@@ -9,6 +9,7 @@ import Foundation
 
 class CombineViewModel{
     // published 어노테이션을 통해 구독이 가능하도록 설정
+
     @Published var passwordInput : String = ""
     @Published var passwordConfrimInput : String = ""
 }

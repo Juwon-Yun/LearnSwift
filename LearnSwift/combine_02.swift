@@ -6,10 +6,23 @@
 //
 
 import SwiftUI
+import UIKit
+import Foundation
+
+class ViewController : UIViewController{
+    // ctrl + drag로 스토리보드에서 가져올 수 있다.
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordConfirmTextField: UITextField!
+    @IBOutlet weak var submitBtn: UIButton!
+}
 
 struct combine_02: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        
+        
+        
     }
 }
 
