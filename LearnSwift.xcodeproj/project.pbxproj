@@ -11,9 +11,9 @@
 		AC07D78428AFC6CC00E3F17E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78328AFC6CC00E3F17E /* Person.swift */; };
 		AC07D78728AFC9FC00E3F17E /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D78628AFC9FC00E3F17E /* ThumbView.swift */; };
 		AC43E74C28C75FBD00FE1C0B /* combine_02.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC43E74B28C75FBD00FE1C0B /* combine_02.storyboard */; };
+		AC46E1AC28CB5C67000C364F /* combine_02_uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46E1AB28CB5C67000C364F /* combine_02_uikit.swift */; };
 		ACA27BE228BA5F4700A6EA97 /* SortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA27BE128BA5F4700A6EA97 /* SortView.swift */; };
 		ACA27BE428BA641C00A6EA97 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACA27BE328BA641C00A6EA97 /* README.md */; };
-		ACB9343528C8E67F00EB3007 /* combine_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9343428C8E67F00EB3007 /* combine_02.swift */; };
 		ACB9343728C8E6D400EB3007 /* combine_02_view_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9343628C8E6D400EB3007 /* combine_02_view_model.swift */; };
 		ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */; };
 		ACBF5FD1289977AE00D5858A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5FD0289977AE00D5858A /* ContentView.swift */; };
@@ -48,9 +48,9 @@
 		AC07D78328AFC6CC00E3F17E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		AC07D78628AFC9FC00E3F17E /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
 		AC43E74B28C75FBD00FE1C0B /* combine_02.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = combine_02.storyboard; sourceTree = "<group>"; };
+		AC46E1AB28CB5C67000C364F /* combine_02_uikit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combine_02_uikit.swift; sourceTree = "<group>"; };
 		ACA27BE128BA5F4700A6EA97 /* SortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortView.swift; sourceTree = "<group>"; };
 		ACA27BE328BA641C00A6EA97 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		ACB9343428C8E67F00EB3007 /* combine_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combine_02.swift; sourceTree = "<group>"; };
 		ACB9343628C8E6D400EB3007 /* combine_02_view_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combine_02_view_model.swift; sourceTree = "<group>"; };
 		ACBF5FCB289977AE00D5858A /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5FCE289977AE00D5858A /* LearnSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftApp.swift; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 				ACBF5FD0289977AE00D5858A /* ContentView.swift */,
 				ACBF5FD2289977AF00D5858A /* Assets.xcassets */,
 				ACBF5FD4289977AF00D5858A /* Preview Content */,
-				ACB9343428C8E67F00EB3007 /* combine_02.swift */,
 				ACB9343628C8E6D400EB3007 /* combine_02_view_model.swift */,
+				AC46E1AB28CB5C67000C364F /* combine_02_uikit.swift */,
 			);
 			path = LearnSwift;
 			sourceTree = "<group>";
@@ -332,12 +332,12 @@
 				ACB9343728C8E6D400EB3007 /* combine_02_view_model.swift in Sources */,
 				ACE1356528AE823600D7F2D5 /* NavView.swift in Sources */,
 				AC07D78428AFC6CC00E3F17E /* Person.swift in Sources */,
-				ACB9343528C8E67F00EB3007 /* combine_02.swift in Sources */,
 				AC07D78728AFC9FC00E3F17E /* ThumbView.swift in Sources */,
 				ACBF5FD1289977AE00D5858A /* ContentView.swift in Sources */,
 				ACA27BE228BA5F4700A6EA97 /* SortView.swift in Sources */,
 				ACBF5FCF289977AE00D5858A /* LearnSwiftApp.swift in Sources */,
 				AC07D78128AFC4D300E3F17E /* NewsView.swift in Sources */,
+				AC46E1AC28CB5C67000C364F /* combine_02_uikit.swift in Sources */,
 				ACE1356028AE7FE100D7F2D5 /* InstagramView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
