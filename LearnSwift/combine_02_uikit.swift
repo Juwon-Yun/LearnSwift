@@ -23,7 +23,7 @@ class CombineViewController : UIViewController{
         
         viewModel = CombineViewModel()
         
-        passwordTextField.textPublisher
+        passwordTextField?.textPublisher
 //            .print()
             // main 쓰레드에서 받겠다.
             .receive(on: DispatchQueue.main)

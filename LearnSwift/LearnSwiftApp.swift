@@ -13,7 +13,7 @@ struct LearnSwiftApp: App {
     var body: some Scene {
         
         WindowGroup {
-            UseUIKitInSwiftUI()
+            UseUIViewControllerInSwiftUI()
         }
     }
 }
@@ -28,5 +28,16 @@ struct UseUIKitInSwiftUI: UIViewRepresentable{
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
         
+    }
+}
+
+struct UseUIViewControllerInSwiftUI : UIViewControllerRepresentable {
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
+    
+    func makeUIViewController(context: Context) -> some UIViewController {
+        let view = CombineViewController()
+        return view
     }
 }

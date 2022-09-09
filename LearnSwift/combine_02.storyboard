@@ -26,6 +26,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="s:" destination="CDy-Oj-BIF" eventType="editingDidEnd" id="vQv-1h-NTz"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력 확인" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTC-pf-apA">
                                         <rect key="frame" x="0.0" y="80" width="374" height="60"/>
@@ -34,6 +37,10 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="asd:" destination="CDy-Oj-BIF" eventType="editingDidEnd" id="NPA-DG-FdH"/>
+                                            <action selector="sd:" destination="CDy-Oj-BIF" eventType="editingDidEnd" id="aEw-rx-wFa"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrA-lY-wbV">
                                         <rect key="frame" x="0.0" y="160" width="374" height="60"/>
@@ -61,6 +68,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CDy-Oj-BIF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="136" y="139"/>
         </scene>
