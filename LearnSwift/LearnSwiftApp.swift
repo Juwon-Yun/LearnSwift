@@ -7,11 +7,26 @@
 
 import SwiftUI
 
+
 @main
 struct LearnSwiftApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            SortView()
+            UseUIKitInSwiftUI()
         }
+    }
+}
+
+
+struct UseUIKitInSwiftUI: UIViewRepresentable{
+    
+    func makeUIView(context: Context) -> some UIView {
+        let view =  UIView()
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        
     }
 }

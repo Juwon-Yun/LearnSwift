@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class ViewController : UIViewController{
+class CombineViewController : UIViewController{
     // ctrl + drag로 스토리보드에서 가져올 수 있다.
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmTextField: UITextField!
@@ -16,10 +16,21 @@ class ViewController : UIViewController{
     
     var viewModel : CombineViewModel!
     
+    private var subscriptions = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad();
         
         viewModel = CombineViewModel()
+        
+        passwordTextField.textPublisher
+//            .print()
+            // main 쓰레드에서 받겠다.
+            .receive(on: DispatchQueue.main)
+            // 구독
+            .assign(to: \.passwordInput, on: viewModel)
+            // subscription 저장
+            .store(in: &subscriptions)
     }
 }
 
