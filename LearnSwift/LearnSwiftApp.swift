@@ -6,18 +6,31 @@
 //
 
 import SwiftUI
+import UIKit
 
 
-@main
-struct LearnSwiftApp: App {
-    var body: some Scene {
+struct LearnSwiftApp: View {
+    init() {
         
-        WindowGroup {
-            UseUIViewControllerInSwiftUI()
-        }
+    }
+    
+//    @State var text : String
+    
+    var body: some View {
+//        WindowGroup {
+            VStack{
+//                testLabel(text: $text)
+                UseUIViewController()
+            }
+//        }
     }
 }
 
+struct LearnSwiftApp_Previews : PreviewProvider {
+    static var previews: some View{
+        LearnSwiftApp()
+    }
+}
 
 struct UseUIKitInSwiftUI: UIViewRepresentable{
     
@@ -31,13 +44,26 @@ struct UseUIKitInSwiftUI: UIViewRepresentable{
     }
 }
 
-struct UseUIViewControllerInSwiftUI : UIViewControllerRepresentable {
+struct UseUIViewController : UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+       CombineViewController()
+    }
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         
     }
     
-    func makeUIViewController(context: Context) -> some UIViewController {
-        let view = CombineViewController()
-        return view
+}
+
+struct testLabel : UIViewRepresentable{
+    @Binding var text : String
+    
+    func makeUIView(context: Context) -> some UIView {
+        let label = UILabel()
+        label.textColor = .blue
+        return label
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+//        uiView.text = text
     }
 }
