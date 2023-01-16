@@ -1,7 +1,7 @@
 import UIKit
 
 /*
- Queue example
+ example
  
  https://developer.apple.com/swift/blog/?id=7
  https://www.swift.org/blog/swift-algorithms/
