@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC05BFA229758E590012C9A4 /* Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AC07D78028AFC4D300E3F17E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		AC07D78328AFC6CC00E3F17E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		AC07D78628AFC9FC00E3F17E /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
@@ -91,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC05BFA129758E440012C9A4 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				AC05BFA229758E590012C9A4 /* Queue.playground */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		AC07D77F28AFC4C100E3F17E /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +135,7 @@
 		ACBF5FC2289977AE00D5858A = {
 			isa = PBXGroup;
 			children = (
+				AC05BFA129758E440012C9A4 /* Queue */,
 				ACBF5FCD289977AE00D5858A /* LearnSwift */,
 				ACBF5FDE289977AF00D5858A /* LearnSwiftTests */,
 				ACBF5FE8289977AF00D5858A /* LearnSwiftUITests */,
